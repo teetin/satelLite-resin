@@ -2,18 +2,27 @@
 
 Conversion scripts for  ELEGOO satelLite resin profiles to ease out the resin mapping.
 
+- You need python and install the dependency pacakges, see requirements.txt
+
 - Export resin setting or settings from elegoo satelLite. 
+    ![alt text](docs/img/PersonalResinLibrary.png)
+
 - Convert Satres to 'human-readable' yaml.
+  `python.exe .\satellite-resin.py elegoo-black-standard.yaml`
+
 - Generate a yaml "diff" file of the setting you want to add or alter.
-- Merge you own setting into existing Elegoo profile
-- Export those to satellite resource files .satres file that can be imported into Elegoo satelLite.
+  - see anycubic-standard-beige.yaml as example
+
+- Merge you own setting into existing Elegoo profile and xport those to satellite resource files .satres file that can be imported into Elegoo satelLite.
+ `python.exe .\satellite-resin.py elegoo-black-standard.yaml -m anycubic-standard-beige -o anycubic-standard-beige.satres`
 
 These scripts are genereted without any influence from Elegoo  and may produce unwanted behaviors. 
+
 So check you settings after import.
 
 ## Anycubic
 
-Anycubic resin settings are taken from Anycubics webpage. For Elegoo Saturn 4 Ultra 16k i have used Photon Mono M7 Pro settings with UV exposure set to 75 %.
+Anycubic resin settings are taken from Anycubic webpage. For Elegoo Saturn 4 Ultra 16k I have used Photon Mono M7 Pro settings with UV exposure set to 75 %.
 
 ## Yaml and Values
 
