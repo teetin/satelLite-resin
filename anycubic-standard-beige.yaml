@@ -39,11 +39,11 @@ printer:
           exposuretime:
             $:          
               Type: 38                    
-              Value: 25.0
+              Value: 2.0
           first_layer_exposure_time:
             $:
               Type: 38                    
-              Value: 27.0
+              Value: 25.0
           thickness:
             $:
               Type: 38                    
